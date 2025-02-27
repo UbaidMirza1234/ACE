@@ -1,0 +1,81 @@
+1.	How do lists and tuples differ in terms of mutability and performance? When would you choose one over the other?
+
+Ans:-   Lists and tuples are both used to store multiple items in Python, but they have key differences:
+
+Mutability:
+
+Lists are mutable, meaning you can change, add, or remove elements after creating them.
+Tuples are immutable, meaning once created, their elements cannot be changed.
+Performance:
+
+Tuples are faster than lists because they use less memory and have a fixed size.
+Lists are slower because they allow modifications and take up more memory.
+
+When to Use What?
+
+Use a list when you need to modify data (e.g., adding/removing elements).
+Use a tuple when data should remain constant (e.g., fixed configurations, coordinates).
+
+
+2. Explain how Python handles type conversion between different data types, such as between integers and floats or between strings and lists. 
+
+python handle types of conversion in two ways:
+ 1 implicit conversion(automatic)
+
+python automatically convert smaller data type to larger ones when needed
+
+ex:-  num = 5 + 2.5 = 7.5
+
+ 2 explicit conversion(manual/type casting)
+You can manually convert data types using functions 
+
+# String to int
+num = int("10")  # Output: 10 
+
+3  Take a number and use the += operator to increase its value by 10.  in easy language
+
+num = 5   
+num += 10
+print(num) 
+# Output: 15
+
+4 Write a Python program to check if a given year is a leap year or not.   
+
+
+year = int(input("Enter a year: ")) 
+
+# Check leap year conditions
+if (year % 4 == 0 and year % 100 != 0) :
+    print(year, "is a leap year.")
+else:
+    print(year, "is not a leap year.")
+
+
+5.	Write a program that asks the user to enter their marks and displays their grade: • 90-100: A 
+•	80-89: B 
+•	70-79: C 
+•	60-69: D 
+•	Below 60: F 
+
+marks = int(input("Enter your marks: "))  # Take marks as input
+
+# Check grade based on marks
+if 90 <= marks <= 100:
+    print("Grade: A")
+elif 80 <= marks <= 89:
+    print("Grade: B")
+elif 70 <= marks <= 79:
+    print("Grade: C")
+elif 60 <= marks <= 69:
+    print("Grade: D")
+else:
+    print("Grade: F")
+
+
+
+
+
+
+
+
+
