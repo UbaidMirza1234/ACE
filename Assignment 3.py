@@ -79,7 +79,7 @@ manager = Manager("Alice", "M123", "HR")
 print(manager.name, manager.emp_id, manager.department)  # Output: Alice M123 HR
 
 
-
+ #5.Implement a function play_sound() that accepts different animal objects (Dog, Cat, Cow) and calls their make_sound() method dynamically. (POLYMORPHISM) 
 class Dog:
     def make_sound(self):
         return "Woof!"
